@@ -1,0 +1,164 @@
+.wrapper.container_1{
+    display: flex;
+    justify-content: space-between;
+
+}
+#bar_menu_1, .tag{
+    margin: 0;
+}
+
+#bar_menu_1>.menu{  
+    display: flex;
+    margin-top: 50px;
+    height: 43px;
+    padding-left: 15px;
+}
+.name1_1{
+    z-index: 200;
+    color: var(--blue);
+    font-family: var(--font-family-french);
+    font-size: 2.5rem;
+    position: absolute;
+    top: 50px;
+}
+.name1_1 span{
+    display: inline-block; /*BASE d'animation*/
+}
+
+/*animation bague Alphabet-------------------------------*/
+@keyframes bague2 {
+    100% {
+    transform: translate3d(0, -20px, 0);
+    }
+}
+
+.name1_1:hover span {
+    animation-name: bague2;
+    animation-duration: .8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.name1_1:hover span:nth-child(2) {
+    animation-delay: .1s;
+}
+.name1_1hover span:nth-child(3) {
+    animation-delay: .12s;
+}
+
+/*--motif bague----------------------------------------------------------*/
+.waves1_1{
+    position: absolute;
+    top: 50px;
+    width: 26%;
+    height: 38px;
+    z-index: 30;
+    background-size: 100px 50px;
+    background-image: 
+    radial-gradient(circle at 50% 100%, rgba(245, 255, 250, 0.877) 10%, SkyBlue 11%, SkyBlue 23%, rgba(245, 255, 250, 0.89) 24%, rgba(245, 255, 250, 0.897) 30%, PowderBlue 31%, PowderBlue 43%, rgba(245, 255, 250, 0.87) 44%, rgba(245, 255, 250, 0.87) 50%, PaleTurquoise 51%, PaleTurquoise 63%, rgba(245, 255, 250, 0.877) 64%, rgba(245, 255, 250, 0.87) 71%, transparent 0%, transparent);  
+}
+
+.waves2_1{
+    position: absolute;
+    top: 27px;
+    width: 26%;
+    height: 48px;
+    z-index: 25;
+    background-size: 100px 120px;
+    background-image: 
+    radial-gradient(circle at 100% 150%, PowderBlue 24%, MintCream 25%, MintCream 28%, LightCyan 29%, LightCyan 36%, transparent 40%, transparent),
+    radial-gradient(circle at 0 150%, PowderBlue 24%, MintCream 25%, MintCream 28%, LightCyan 29%, LightCyan 36%, transparent 40%, transparent), 
+    radial-gradient(circle at 100% 50%, rgba(245, 255, 250, 0.726) 5%, MediumTurquoise 6%, MediumTurquoise 15%, MintCream 16%, MintCream 20%, PowderBlue 21%, PowderBlue 30%, MintCream 31%, rgba(245, 255, 250, 0.829) 35%, rgba(224, 255, 255, 0.781) 36%, rgba(224, 255, 255, 0.836) 50%,transparent 50%, transparent),
+    radial-gradient(circle at 0 50%, MintCream 5%, MediumTurquoise 6%, MediumTurquoise 15%, MintCream 16%, MintCream 20%, PowderBlue 21%, PowderBlue 30%, MintCream 31%, MintCream 35%, rgba(224, 255, 255, 0.884) 36%, rgba(224, 255, 255, 0.849) 50%,transparent 0%, transparent); 
+}
+#produit{
+    background-color: var(--light);
+}
+.at_production{
+    text-align: center;
+    color: var(--hinohino);
+}
+.bg_motif1 {
+    animation-name: nMotion;
+    animation-duration: 70s;
+    animation-iteration-count: 10;
+    border-radius: 148% 80% 158% 51%;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    right: -95px;
+    top: 350px;
+    z-index: 18;
+}
+
+.bg_motif1:after{
+    z-index: 10;
+}
+/*animation bg_motif1 test -----------------------------------------*/
+@keyframes nMotion {
+    0% {
+        transform: translate(-30%, -30%) scale(2.8, 2.8);
+        background-color: var(--light)
+}
+    6% {
+        transform: translate(-30%, -30%) scale(2.8, 2.2);
+        background-color: var(--hinoko)
+    }
+    12% {
+        transform: translate(-30%, -30%) scale(2.8, 2.8);
+        background-color: var(--light)
+    }
+    25% {
+        transform: translate(-30%, -30%) scale(1.8, 2.8);
+        background-color: var(--info)
+    }
+    36% {
+        transform: translate(-30%, -30%) scale(2.8, 2.8);
+        background-color: var(--light)
+    }
+    43% {
+        transform: translate(15%, 10%) scale(1.7, 1.2);
+        background-color: var(--orange)
+    }
+    50% {
+        transform: translate(-80%, -30%) scale(2.8, 2.8);
+        background-color: var(--light)
+    }
+    55% {
+        transform: translate(-10%, -50%) scale(1.8, 1.0);
+        background-color: var(--green)
+    }
+    62% {
+        transform: translate(-30%, -30%) scale(2.8, 2.8);
+        background-color: var(--light)
+    }
+    72% {
+        transform: translate(-30%, -90%) scale(2.8, 2.2);
+        background-color: var(--yellow)
+    }
+    80% {
+        transform: translate(-30%, -30%) scale(2.8, 2.8);
+        background-color: var(--light)
+    }
+    100% {
+        transform: translate(-30%, -30%) scale(1.9, 1.4);
+        background-color: var(--hinomaru)
+    }
+}
+.test_rond{
+    width: 300px;
+    height: 300px;
+    margin: 100px auto;
+    font-size: 12px;
+}
+.test_rond svg {
+    overflow: visible;
+}
+.test_rond path {
+    fill: none;
+}
+.test_rond text {
+    fill: #0089A7;
+}
+
+

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Lobster&family=Source+Sans+Pro&family=Yuji+Boku&family=Yuji+Syuku&display=swap');
+@import "font-awesome";
+:root {
+    --blue: #081b50fc;
+    --bleu-m:#073763;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #da3b4b;
+    --hinomaru: #fac0bd;
+    --hinohino: #f8938d;
+    --hinoko: #fc7770;
+    --orange: #e9822db4;
+    --orange1: #e4a878b4;
+    --yellow: #dbc890b4;
+    --beige:  #fce8cb7e;
+    --green: #66c47c8f;
+    --teal: #c7fcecab;
+    --ver:  #71ad62a1;  
+    
+    --cyan: #9adbe6dc;
+    --white: #fff;
+    --gray: #6c757d;
+    --gri:  #343436e3;
+    --gray-dark: #3b434b;
+    --primary: #6eb2fc70;
+    --secondary: #6c757d;
+    --success: #44a35a9d;
+    --info: #3ba7b8d5;
+    --warning: #ffc107;
+    --danger: #cc2536;
+    --light: #f1e9e0fd;
+    --dark: #252727d2;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-kanji: 'Yuji Boku';
+    --font-family-french: 'Lobster';
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}

@@ -1,0 +1,419 @@
+
+*{
+    margin: 0 auto;
+    max-height: max-content;
+}
+#corps{
+    background-color: var(--light);
+    position: relative;
+}
+.wrapper{
+    width: 1250px;
+    max-width:100%;
+    margin: 0 auto;
+}
+
+.wrapper.container{
+    display: flex;
+    flex-direction: row-reverse;
+    height:720px;
+}
+
+/*-------nav_menu------------------------------*/
+#bar_menu{
+    z-index: 5;
+}
+.menu li{
+    list-style: none;
+    text-decoration: none;
+}
+#bar_menu>.menu{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    height: 43px;
+}
+.menu i{
+    margin-left: 10px;
+    padding-top: 8px;
+}
+.menu>li:nth-child(-n+4){
+    margin-left: 25px;
+    padding: 0px 13px;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    border: dotted;
+    border-color: var(--hinomaru);
+}
+.menu>li>a{
+    text-decoration: none;
+    color: var(--gray-dark);
+    text-transform: capitalize;
+}
+.menu>li:hover{
+    background-color: var(--hinomaru);
+}
+.icon{
+    float: right;
+}
+.icon>a{
+    text-decoration: none;
+    color:var(--blue)
+}
+
+/*--header title-----------------------------------------------*/
+.wrapper.title{
+  margin-top: 80px;;
+}
+.name1{
+  z-index: 200;
+  color: var(--blue);
+  font-family: var(--font-family-french);
+  font-size: 3rem;
+  position: absolute;
+  top: 420px;
+  margin-left: 40px;
+}
+.name1 span{
+  display: inline-block; /*BASE d'animation*/
+}
+
+/*animation bague Alphabet-------------------------------*/
+@keyframes bague2 {
+100% {
+  transform: translate3d(0, -20px, 0);
+}
+}
+
+.name1:hover span {
+  animation-name: bague2;
+  animation-duration: .8s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+}
+
+.name1:hover span:nth-child(2) {
+  animation-delay: .1s;
+}
+.name1:hover span:nth-child(3) {
+  animation-delay: .2s;
+}
+.name1:hover span:nth-child(4) {
+  animation-delay: .3s;
+}
+.name1:hover span:nth-child(5) {
+  animation-delay: .4s;
+}
+.name1:hover span:nth-child(6) {
+  animation-delay: .5s;
+}
+.name1:hover span:nth-child(7) {
+  animation-delay: .6s;
+}
+.name1:hover span:nth-child(8) {
+  animation-delay: .7s;
+}
+.name1:hover span:nth-child(9) {
+  animation-delay: .8s;
+}
+.name1:hover span:nth-child(10) {
+  animation-delay: .9s;
+}
+.name1:hover span:nth-child(11) {
+  animation-delay: .92s;
+}
+.name1:hover span:nth-child(12) {
+  animation-delay: 1.1s;
+}
+.name1:hover span:nth-child(13) {
+  animation-delay: 1.2s;
+}
+.name1:hover span:nth-child(14) {
+  animation-delay: 1.3s;
+}
+.name1:hover span:nth-child(15) {
+  animation-delay: 1.4s;
+}
+.name1:hover span:nth-child(16) {
+  animation-delay: 1.5s;
+}
+.name1:hover span:nth-child(17) {
+  animation-delay: 1.6s;
+}
+.name1:hover span:nth-child(18) {
+  animation-delay: 1.7s;
+}
+.name1:hover span:nth-child(19) {
+  animation-delay: 1.8s;
+}
+.name1:hover span:nth-child(20) {
+  animation-delay: 1.9s;
+}
+
+.name2{
+  display: block; /*BASE d'animation*/
+  z-index: 100;
+  writing-mode: vertical-rl;
+  color: var(--gray-dark);
+  float: right;
+  font-family: 'Yuji Syuku', serif;
+  font-weight: bold;
+  font-size: 6.0rem;
+  position: relative;
+  top: 105px;
+  left: 300px;
+  text-shadow: 6px 6px 5px var(--hinomaru);
+}
+.name2 span{
+  display: inline-block; /*BASE d'animation*/
+}
+
+/*animation bague KANJI-------------------------------*/
+@keyframes bague {
+  100% {
+    transform: translate3d(0, -20px, 0);
+  }
+}
+  
+.name2:hover span {
+  animation-name: bague;
+  animation-duration: .8s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+}
+
+.name2:hover span:nth-child(2) {
+  animation-delay: .1s;
+}
+.name2:hover span:nth-child(3) {
+  animation-delay: .2s;
+}
+.name2:hover span:nth-child(4) {
+  animation-delay: .3s;
+  }
+
+.sous-title{
+  z-index: 50;
+  font-style: italic;
+  font-family: var(--font-family-french);
+  color: var(--info);
+  position: relative;
+  top: 385px;
+  margin-left: 40px;
+  text-align: justify;
+}
+
+
+/*--animation de rond rouge---------------------------------------------*/     
+.bg_motif{
+  animation-name: wide-scale;
+  background-color: var(--hinoko);
+  animation-duration: 25s; /*70s;*/
+  animation-delay: .3s;
+  animation-iteration-count: 7;
+  animation-fill-mode: forwards;
+/*-----------------------------------------------*/
+  border-radius: 50% / 50%;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  right: -200px;/*-85px;*/
+  top: 92px;
+/* top: 158px;*/
+  z-index: 3;
+}
+/*--animation de rond rouge---------------------------------------------*/
+@keyframes wide-scale {	
+  0% {
+  transform: rotate(0deg) translateX(-200px) rotate(0deg);
+}
+
+100% {
+  transform: rotate(180deg) translateX(-290px) rotate(180deg);
+}
+}
+/*0% {
+        background-color: var(--light);
+    }
+    10% {
+        background-color: var(--hinoko);
+    }
+    38%{
+        background-color: var(--hinohino);
+    }
+    55%{
+        background-color: var(--hinoko);
+    }
+    85%{
+        background-color: var(--hinomaru);
+    }
+    100% {
+      background-color: var(--danger);
+    } 
+  }
+*/
+
+
+/*--animation de rond rouge path---------------------------------------------*/ 
+div.dome {
+  width: 150px;
+  height: 150px;
+  margin: 80px auto;
+  font-size: 12px;
+  animation: donut-spin 90s linear infinite;
+  z-index: 100;
+}
+.dome>svg {
+  overflow: visible;
+}
+path {
+  fill: #e85454
+}
+
+@keyframes donut-spin {
+to {
+  transform: rotate(3turn);
+}
+}
+
+/*--motif bague----------------------------------------------------------*/
+.waves1{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 669px;
+  margin-left: 22px;
+  width: 1252px;
+  height: 50px;
+  z-index: 30;
+  background-size: 100px 50px;
+  background-image: 
+  radial-gradient(circle at 50% 100%, rgba(245, 255, 250, 0.877) 10%, SkyBlue 11%, SkyBlue 23%, rgba(245, 255, 250, 0.89) 24%, rgba(245, 255, 250, 0.897) 30%, PowderBlue 31%, PowderBlue 43%, rgba(245, 255, 250, 0.87) 44%, rgba(245, 255, 250, 0.87) 50%, PaleTurquoise 51%, PaleTurquoise 63%, rgba(245, 255, 250, 0.877) 64%, rgba(245, 255, 250, 0.87) 71%, transparent 0%, transparent);  
+}
+
+.waves2{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 22px;
+  top: 644px;
+  width: 1252px;
+  height: 68px;
+  z-index: 25;
+  background-size: 100px 120px;
+  background-image: 
+  radial-gradient(circle at 100% 150%, PowderBlue 24%, MintCream 25%, MintCream 28%, LightCyan 29%, LightCyan 36%, transparent 40%, transparent),
+  radial-gradient(circle at 0 150%, PowderBlue 24%, MintCream 25%, MintCream 28%, LightCyan 29%, LightCyan 36%, transparent 40%, transparent), 
+  radial-gradient(circle at 100% 50%, rgb(245, 255, 250) 5%, MediumTurquoise 6%, MediumTurquoise 15%, MintCream 16%, MintCream 20%, PowderBlue 21%, PowderBlue 30%, MintCream 31%, rgb(245, 255, 250) 35%, rgb(224, 255, 255) 36%, rgb(224, 255, 255) 50%,transparent 50%, transparent),
+  radial-gradient(circle at 0 50%, MintCream 5%, MediumTurquoise 6%, MediumTurquoise 15%, MintCream 16%, MintCream 20%, PowderBlue 21%, PowderBlue 30%, MintCream 31%, MintCream 35%, rgb(224, 255, 255) 36%, rgb(224, 255, 255) 50%,transparent 0%, transparent); 
+}
+
+
+
+/*main------------------------------------------------------------------------------------------------------*/
+.main_content{
+  margin-top: 25px;
+  height: 700px;
+  z-index:99;
+}
+.cara{
+  border-top: 15px solid ;
+  border-bottom: 7px double;
+  font-family: var(--font-family-french);
+  margin: 0;
+}
+.catch>.cherche{
+  background-color: var(--yellow);
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+.img-center{ /*cadre photo*/
+  float: right;
+  shape-margin: 1rem;
+  border-radius: 90%;
+  shape-outside: ellipse();
+}
+img{
+  width: 15%;
+  padding-top: 0px;
+}
+
+.description>p, .description_2>p{
+  font-size: 1.5em;
+  margin: 0;
+  padding: 20px 25px;
+}
+.dev{
+  color: var(--bleu-m);
+  font-weight: bold;
+}
+.description.description>p:nth-child(1){
+  background-color: var(--hinomaru);
+  width: 70%;
+  border-radius: 0px 62px 62px 0px;
+}
+.description>p:nth-child(3){
+  background-color: var(--ver);
+  width: 85%;
+  border-radius: 62px 0px 0px 62px;
+  float: right;
+  margin-left: 181px;
+}
+.cv_img{
+  margin-top: 50px;
+}
+.cv_img>img{
+  width: 30%;
+  margin-left: 230px;
+  margin-right: 50px;
+}
+.cv_drive{
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px;
+  color: var(--gray-dark);
+  border-radius: 10px;
+  border: dotted 8px;
+  border-color: var(--hinomaru);
+}
+.cv_drive:hover{
+  background-color: var(--hinomaru);
+  color: var(--gray-dark);
+}
+.cv_en_ligne>img{
+  display: block;
+}
+.catch_1{
+    margin-top: 285px;
+}
+.description>p{
+  font-style: italic;
+  font-size: 20px;
+}
+.description_2>p{
+  font-style: italic;
+  font-size: 20px;
+  width: 90%;
+}
+.description_2>p:hover{
+  background-color: var(--cyan);
+  border-radius: 0px 62px 62px 0px;
+  transition: 0.5s;
+}
+
+/*footer--------------------------------------------------------*/
+footer{
+    margin-top: 50px;
+    background-color: var(--yellow);
+}
+.all_rights{
+    text-align: center;
+  
+}

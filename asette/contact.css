@@ -1,0 +1,76 @@
+/*Contact.html-------------------------------------------------*/
+#contact{
+    background-color: var(--light)
+}
+form{
+    max-width: 550px;
+    width: 90%;
+    background: var(--hinomaru);
+    margin: 10vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing:border-box ;
+}
+h1>.forme{
+    margin: 0;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin: 20px 0;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1.3px solid #ecb4b4;
+}
+input[type=text]:focus, textarea:focus{
+    border-bottom: 1.3px solid #e93232;
+}textarea::-webkit-scrollbar{
+    width: 4px;
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: #e93232;
+}
+.center{
+    text-align: center;
+}
+input[type="submit"]{
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background: linear-gradient(to right, #e93232, #e47979);
+    color: var(--light);
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.error{
+    color: #ee1818;
+}
+.error-border{
+    border-bottom: 1px solid #ee1818;
+}
+
+#success{
+    color: var(--green);
+}
+
+
+/*message alerte-----------------------------------*/
+.alerte{
+    color: var(--hinohino);
+    border-bottom: double 8px var(--hinomaru) ;
+    text-align: center;   
+}
+.mail{
+    font-weight: bold;
+    color: var(--red);
+}
